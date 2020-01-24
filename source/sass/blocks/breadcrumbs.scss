@@ -1,0 +1,37 @@
+.breadcrumbs__wrapper {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.breadcrumbs__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__item::after {
+  content: "/";
+  margin: 0 4px;
+  color: $text-breadcrumbs;
+}
+
+.breadcrumbs__item:last-child::after {
+  content: none;
+}
+
+.breadcrumbs__link {
+  font-size: 12px;
+  line-height: 15px;
+  color: $text-breadcrumbs;
+}
+
+@media (max-width: $width-tablet - 1) {
+  .breadcrumbs__wrapper {
+    padding: 20px 0;
+  }
+}

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Главная</title>
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__logo logo">
+          <svg class="logo__image" width="44" height="60" title="Логотип компании">
+            <use xlink:href="#logo"></use>
+          </svg>
+          <span class="logo__title">ООО “СЕМЬЯ”</span>
+        </a>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="about.html">О компании</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="reviews.html">Отзывы</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address">
+          <svg class="address__icon" width="24" height="24" title="Иконка карты">
+            <use xlink:href="#icon-map"></use>
+          </svg>
+          <p class="address__text">г. Михайловск на ул. Почтовая 2/2</p>
+        </address>
+        <div class="phone messages__link">
+          <picture>
+            <source media="(max-width: 768px)" srcset="img/icon-phone-mobile.svg">
+            <img class="phone__icon" src="img/icon-phone.svg" width="24" height="24" alt="Иконка телефона">
+          </picture>
+          <a class="phone__number" href="tel:+79682682343">+7 968 268 23 43</a>
+        </div>
+        <div class="toggle">
+          <svg class="toggle__icon" width="21" height="21" title="Иконка телефона">
+            <use xlink:href="#icon-menu"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="promo">
+      <div class="container">
+        <div class="promo__wrapper">
+          <h1 class="promo__title">Помощь многодетным семьям в Ставрополе и Ставропольском крае</h1>
+          <a class="promo__link button" href="#">Получить консультацию</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="features__wrapper">
+          <ul class="features__list slider-features">
+            <li class="features__item">
+              <svg class="features__icon" width="64" height="64" title="Иконка документа">
+                <use xlink:href="#icon-document"></use>
+              </svg>
+              <p class="features__title">Не требуем справок о доходах</p>
+            </li>
+            <li class="features__item">
+              <svg class="features__icon" width="64" height="58" title="Иконка руки">
+                <use xlink:href="#icon-hand"></use>
+              </svg>
+              <p class="features__title">С любой кредитной историей</p>
+            </li>
+            <li class="features__item">
+              <svg class="features__icon" width="62" height="64" title="Иконка весов">
+                <use xlink:href="#icon-scales"></use>
+              </svg>
+              <p class="features__title">Полная юридическая поддержка</p>
+            </li>
+            <li class="features__item">
+              <svg class="features__icon" width="58" height="64" title="Иконка книг">
+                <use xlink:href="#icon-books"></use>
+              </svg>
+              <p class="features__title">Обеспечиваем вас всеми документами</p>
+            </li>
+          </ul>
+          <div class="features__info">
+            <p class="features__text">Общество с ограниченной ответственностью «Семья» осуществляет свою деятельность с
+              апреля 2010 года, являясь
+              одной из немногих организаций, оказывающих полный спектр услуг в сфере недвижимого имущества и сделок с
+              ним
+              на всей территории Ставропольского края и республики Крым.</p>
+            <p class="features__text">Наши направления: помощь в получении и выдаче займов для приобретения и
+              строительства жилья с
+              использованием средств материнского (семейного) капитала; подбор и оформление недвижимого имущества:
+              домов,
+              квартир, комнат, коттеджей, земельных участков и коммерческой недвижимости; представительство в судах.</p>
+            <p class="features__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa, blanditiis
+              doloribus debitis enim eius voluptatum, unde reiciendis voluptatem magnam quidem optio asperiores qui
+              officiis! Placeat, odio quam. Vitae, assumenda!</p>
+            <p class="features__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa, blanditiis
+              doloribus debitis enim eius voluptatum, unde reiciendis voluptatem magnam quidem optio asperiores qui
+              officiis! Placeat, odio quam. Vitae, assumenda!</p>
+          </div>
+          <a class="features__link more" href="#">
+            <span class="features__link-text">Читать далее...</span>
+            <svg class="features__link-icon more__icon" width="12" height="8" title="Иконка раскрытия информации">
+              <use xlink:href="#icon-arrow-down"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="questions">
+      <div class="container">
+        <div class="questions-wrapper">
+          <h2 class="questions__title">Часто задаваемые вопросы</h2>
+          <ul class="questions__list slider-questions">
+            <li class="questions__item question">
+              <svg class="question__icon" width="44" height="45" title="Иконка знак вопроса">
+                <use xlink:href="#icon-question"></use>
+              </svg>
+              <h3 class="question__title">Кто может получить государственную поддержку?</h3>
+              <p class="question__text">Право на получение государственной поддержки возникает у матери или отца,
+                у которых с 1 января 2019 года родился третий ребенок или последующие дети.</p>
+            </li>
+            <li class="questions__item question">
+              <svg class="question__icon" width="44" height="45" title="Иконка знак вопроса">
+                <use xlink:href="#icon-question"></use>
+              </svg>
+              <h3 class="question__title">На что можно направить средства государственной поддержки?</h3>
+              <ul class="question__list">
+                <li class="question__item">- Покупка жилого помещения</li>
+                <li class="question__item">- Покупка земельного участка (ИЖС)</li>
+              </ul>
+            </li>
+            <li class="questions__item question">
+              <svg class="question__icon" width="44" height="45" title="Иконка знак вопроса">
+                <use xlink:href="#icon-question"></use>
+              </svg>
+              <h3 class="question__title">На какую сумму можно рассчитывать по данной программе?</h3>
+              <p class="question__text">Не более 450 тыс. рублей.</p>
+            </li>
+            <li class="questions__item question">
+              <svg class="question__icon" width="44" height="45" title="Иконка знак вопроса">
+                <use xlink:href="#icon-question"></use>
+              </svg>
+              <h3 class="question__title">Что необходимо сделать для получения государственной поддержки?</h3>
+              <ul class="question__list">
+                <li class="question__item">- Подготовить пакет документов и обратиться к нам офис</li>
+                <li class="question__item">- Получить от нас денежные средства</li>
+              </ul>
+              <p class="question__text question__text--info">(Все остальные справки и заявления для выплаты мы оформим и
+                подадим за вас сами)</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="answers">
+      <div class="container">
+        <div class="answers__wrapper">
+          <h2 class="answers__title">Получите предварительный ответ без посещения нашего офиса</h2>
+          <form class="answers__form form" action="https://echo.htmlacademy.ru" method="post">
+            <label for="name-field-first">
+              <input class="form__field form__field--name" type="text" id="name-field-first" name="name" value=""
+                placeholder="Ваше имя" required>
+            </label>
+            <label for="phone-field-first">
+              <input class="form__field form__field--phone" type="tel" id="phone-field-first" name="phone" value=""
+                placeholder="Номер телефона" required>
+            </label>
+            <button class="form__button button" type="submit">Получить консультацию</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="documents">
+      <div class="container">
+        <div class="documents__wrapper">
+          <h2 class="documents__title">Необходимые документы</h2>
+          <ol class="documents__list">
+            <li class="documents__item">Паспорта мамы и супруга</li>
+            <li class="documents__item">СНИЛС<br>(мама или супруг – предоставить по покупателю недвижимости)</li>
+            <li class="documents__item">ИНН<br>(мама или супруг – предоставить по покупателю недвижимости)</li>
+            <li class="documents__item">Свидетельство о заключении брака или расторжении</li>
+            <li class="documents__item">Нотариально заверенные Свидетельства о рождении детей (паспорта детей, достигших
+              14-летия)</li>
+            <li class="documents__item">Свидетельства о регистрации детей по месту жительства</li>
+            <li class="documents__item">Реквизиты лицевого счета<br>(мамы или папы) для перечисления средств по договору
+            </li>
+          </ol>
+          <div class="required">
+            <p class="required__text">По приобретаемому объекту недвижимости необходимо представить оригиналы следующих
+              документов:</p>
+            <ul class="required__list">
+              <li class="required__item">Свидетельство о гос. регистрации прав на приобретаемую недвижимость продавца
+                (квартира/комната/дом/земельный участок)</li>
+              <li class="required__item">Документ основание возникновения права собственности у продавца на продаваемую
+                недвижимость</li>
+              <li class="required__item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis incidunt beatae
+                ullam libero cupiditate hic officiis quisquam dolores aliquid? Animi nostrum in quos deserunt inventore
+                optio commodi, dicta eos pariatur.</li>
+              <li class="required__item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis incidunt beatae
+                ullam libero cupiditate hic officiis quisquam dolores aliquid? Animi nostrum in quos deserunt inventore
+                optio commodi, dicta eos pariatur.</li>
+            </ul>
+            <a class="required__link more" href="#">
+              <span class="required__link-text">Читать далее...</span>
+              <svg class="required__link-icon more__icon" width="12" height="8" title="Иконка раскрытия информации">
+                <use xlink:href="#icon-arrow-down"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="answers answers--additional">
+      <div class="container">
+        <div class="answers__wrapper">
+          <h2 class="answers__title">Получите предварительный ответ без посещения нашего офиса</h2>
+          <form class="answers__form form" action="https://echo.htmlacademy.ru" method="post">
+            <label for="name-field-second">
+              <input class="form__field form__field--name" type="text" id="name-field-second" name="name" value=""
+                placeholder="Ваше имя" required>
+            </label>
+            <label for="phone-field-second">
+              <input class="form__field form__field--phone" type="tel" id="phone-field-second" name="phone" value=""
+                placeholder="Номер телефона" required>
+            </label>
+            <button class="form__button button" type="submit">Получить консультацию</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="reviews">
+      <div class="container">
+        <div class="reviews__wrapper">
+          <h2 class="reviews__title">Отзывы о нас</h2>
+          <ul class="reviews__list slider-reviews">
+            <li class="reviews__item review">
+              <div class="review__title">
+                <span class="review__name">Елена</span>
+                <span class="review__city">с. Донское</span>
+              </div>
+              <time class="review__date" datetime="2015-12-28">28.12.2015</time>
+              <p class="review__text">Хорошее агенство. наша семья купила через них дом и не капельки не пожалели. Везде
+                с нами ездил юрист и смотрел за правильностью сделки. Мы довольны.</p>
+              <p class="review__text">С Новым годом Семья! Будте счастливы!</p>
+            </li>
+            <li class="reviews__item review">
+              <div class="review__title">
+                <span class="review__name">Елена</span>
+                <span class="review__city">с. Донское</span>
+              </div>
+              <time class="review__date" datetime="2015-12-28">28.12.2015</time>
+              <p class="review__text">Хорошее агенство. наша семья купила через них дом и не капельки не пожалели. Везде
+                с нами ездил юрист и смотрел за правильностью сделки. Мы довольны.</p>
+              <p class="review__text">С Новым годом Семья! Будте счастливы!</p>
+            </li>
+            <li class="reviews__item review">
+              <div class="review__title">
+                <span class="review__name">Елена</span>
+                <span class="review__city">с. Донское</span>
+              </div>
+              <time class="review__date" datetime="2015-12-28">28.12.2015</time>
+              <p class="review__text">Хорошее агенство. наша семья купила через них дом и не капельки не пожалели. Везде
+                с нами ездил юрист и смотрел за правильностью сделки. Мы довольны.</p>
+              <p class="review__text">С Новым годом Семья! Будте счастливы!</p>
+            </li>
+            <li class="reviews__item review">
+              <div class="review__title">
+                <span class="review__name">Елена</span>
+                <span class="review__city">с. Донское</span>
+              </div>
+              <time class="review__date" datetime="2015-12-28">28.12.2015</time>
+              <p class="review__text">Хорошее агенство. наша семья купила через них дом и не капельки не пожалели. Везде
+                с нами ездил юрист и смотрел за правильностью сделки. Мы довольны.</p>
+              <p class="review__text">С Новым годом Семья! Будте счастливы!</p>
+            </li>
+          </ul>
+          <a class="reviews__link button" href="#">Оставить отзыв</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <p class="footer__copyright">Copyright © 2013-2020 Freepik Company S.L. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="popup popup--recall hide">
+    <h3 class="popup__title">Получить консультацию</h3>
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <input class="form__name form__field" type="text" placeholder="Ваше имя" required>
+      <input class="form__phone form__field" type="text" placeholder="Номер телефона" required>
+      <button class="form__send button" type="submit">Получить консультацию</button>
+      <div class="form__agreement">
+        <label class="form__check" for="check-field-first">
+          <input class="form__check-field visually-hidden" type="checkbox" name="check" id="check-field-first" required>
+          <span class="form__check-icon form__check-icon--checked"></span>
+        </label>
+        <p class="form__text">Я принимаю условия обработки моих <a class="form__agreement-link" href="#"
+            target="_blank">персональных
+            данных</a></p>
+      </div>
+    </form>
+    <button class="popup__close button--close popup__close--recall" type="button" title="Кнопка закрыть модальное окно">
+      <svg width="17" height="17" title="Иконка закрыть">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="popup popup--messages hide">
+    <h3 class="popup__title">Получить консультацию</h3>
+    <ul class="popup__list">
+      <li class="popup__item popup__item--telegram">
+        <a class="popup__link" href="#">Написать в Telegram</a>
+      </li>
+      <li class="popup__item popup__item--whatsapp">
+        <a class="popup__link" href="#">Написать в WhatsApp</a>
+      </li>
+      <li class="popup__item popup__item--recall">
+        <a class="popup__link" href="#">Заказать звонок</a>
+      </li>
+      <li class="popup__item popup__item--call">
+        <a class="popup__link" href="#">Позвонить</a>
+      </li>
+    </ul>
+    <button class="popup__close button--close popup__close--message" type="button"
+      title="Кнопка закрыть модальное окно">
+      <svg width="17" height="17" title="Иконка закрыть">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="popup popup--review hide">
+    <h3 class="popup__title">Оставить свой отзыв</h3>
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form__fieldset">
+        <input class="form__name form__field" type="text" name="name" id="name-field" placeholder="Ваше имя" required>
+        <input class="form__city form__field" type="text" name="city" id="city-field" placeholder="Ваш город" required>
+        <input class="form__mail form__field" type="text" name="mail" id="mail-field" placeholder="E-mail" required>
+      </div>
+      <textarea class="form__review form__field" name="review" id="review-field" placeholder="Текст отзыва"
+        required></textarea>
+      <div class="form__info">
+        <div class="form__agreement">
+          <label class="form__check" for="check-field-second">
+            <input class="form__check-field visually-hidden" type="checkbox" name="check" id="check-field-second"
+              required>
+            <span class="form__check-icon form__check-icon--checked"></span>
+          </label>
+          <p class="form__text">Я принимаю условия обработки моих <a class="form__agreement-link" href="#"
+              target="_blank">персональных
+              данных</a></p>
+        </div>
+        <button class="form__send button" type="submit">Получить консультацию</button>
+      </div>
+    </form>
+    <button class="popup__close button--close popup__close--review" type="button" title="Кнопка закрыть модальное окно">
+      <svg width="17" height="17" title="Иконка закрыть">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="menu hide">
+    <div class="menu__wrapper">
+      <nav class="navigation menu__navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--active">
+            <a class="navigation__link" href="about.html">О компании</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="reviews.html">Отзывы</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu__info">
+        <div class="container">
+          <div class="phone">
+            <svg class="phone__icon" width="24" height="24" title="Иконка телефона">
+              <use xlink:href="#icon-phone-menu"></use>
+            </svg>
+            <a class="phone__number" href="tel:+79682682343">+7 968 268 23 43</a>
+          </div>
+          <address class="address">
+            <img class="address__icon" src="img/icon-map-menu.svg" alt="Иконка карты.">
+            <p class="address__text">г. Михайловск на ул. Почтовая 2/2</p>
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

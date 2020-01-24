@@ -1,0 +1,30 @@
+.more {
+  font-weight: 500;
+  color: $text-additional;
+  background: $background-default;
+  border: 1px solid $border-more;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+}
+
+.more__icon {
+  width: 12px;
+  height: 8px;
+  margin-left: 7px;
+}
+
+.more__icon--active {
+  transform: rotate(180deg);
+}
+
+@media (max-width: $width-tablet - 1) {
+  .more {
+    background-color: $button-show-mobile;
+    min-height: 50px;
+  }
+}

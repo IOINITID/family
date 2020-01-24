@@ -1,0 +1,45 @@
+.review {
+  width: 414px;
+  min-height: 250px;
+  border: 1px solid $border-review;
+  padding: 30px;
+}
+
+.review__title {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.review__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.review__city {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.review__date {
+  font-size: 12px;
+  line-height: 15px;
+  color: $text-date;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.review__text {
+  font-family: $font-additional;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-additional;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.review__text:last-child {
+  margin-bottom: 0;
+}

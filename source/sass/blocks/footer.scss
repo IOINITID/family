@@ -1,0 +1,19 @@
+.footer__wrapper {
+  min-height: 114px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.footer__copyright {
+  color: $text-additional;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: $width-tablet - 1) {
+  .footer__wrapper {
+    padding: 40px 0;
+  }
+}

@@ -1,0 +1,275 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  background-color: $background-default;
+}
+
+.popup__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 70px;
+}
+
+
+.popup .form__field {
+  width: 292px;
+  min-height: 44px;
+}
+
+.popup .form__send {
+  width: 292px;
+  min-height: 44px;
+  margin-bottom: 35px;
+}
+
+.popup .form__agreement {
+  display: flex;
+}
+
+.popup .form__text {
+  width: 210px;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-additional;
+  margin: 0;
+}
+
+.popup .form__check {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+  margin-top: 4px;
+}
+
+.popup .form__check:hover {
+  cursor: pointer;
+}
+
+.popup .form__check-icon {
+  width: 16px;
+  height: 16px;
+  background: $border-default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup .form__check-icon::before {
+  content: none;
+  background: url("../img/icon-check.svg");
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 10px;
+}
+
+.popup .form__check-field:checked ~ .form__check-icon::before {
+  content: "";
+}
+
+.popup__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.popup .form__agreement-link {
+  text-decoration-line: underline;
+  color: $text-decorative;
+}
+
+.popup--recall {
+  width: 412px;
+  height: 524px;
+  background: $background-default;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 55px;
+}
+
+.popup--recall .form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.popup--recall .form__name {
+  margin-bottom: 40px;
+}
+
+.popup--recall .form__phone {
+  margin-bottom: 40px;
+}
+
+.popup--review {
+  width: 857px;
+  min-height: 520px;
+  background-color: $background-default;
+  padding-left: 114px;
+  padding-right: 114px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.popup--review .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup--review .popup__title {
+  margin-bottom: 60px;
+}
+
+.popup--review .form__fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.popup--review .form__field {
+  width: 200px;
+}
+
+.popup--review .form__review {
+  width: 100%;
+  resize: none;
+  min-height: 130px;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 40px;
+}
+
+.popup--review .form__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup--review .form__send {
+  margin-bottom: 0;
+}
+
+.popup__list {
+  @include list-reset;
+}
+
+.popup--messages {
+  width: 412px;
+  height: 524px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 55px;
+}
+
+.popup__item {
+  width: 100%;
+  min-height: 50px;
+  background: $background-list;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-inverse;
+}
+
+.popup__item:last-child {
+  margin-bottom: 0;
+}
+
+.popup__item--telegram {
+  background: $background-telegram;
+}
+
+.popup__item--telegram:active {
+  background: $background-telegram-active;
+}
+
+.popup__item--whatsapp {
+  background: $background-whatsapp;
+}
+
+.popup__item--whatsapp:active {
+  background: $background-whatsapp-active;
+}
+
+.popup__item--recall {
+  background: $background-recall;
+}
+
+.popup__item--recall:active {
+  background: $background-recall-active;
+}
+
+.popup__item--call {
+  background: $background-call;
+}
+
+.popup__item--call:active {
+  background: $background-call-active;
+}
+
+@media (max-width: $width-tablet - 1) {
+  .popup__title {
+    padding: 0 40px;
+    margin-bottom: 40px;
+  }
+
+  .popup {
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    position: fixed;
+    overflow: scroll;
+  }
+
+  .popup .form__field {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .popup .form__phone {
+    margin-bottom: 60px;
+  }
+
+  .popup .form__send {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .popup--review .form__fieldset {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .popup .form__info {
+    flex-direction: column;
+  }
+
+  .popup--review .popup__title {
+    margin-bottom: 40px;
+  }
+
+  .popup--review .form__send {
+    order: -1;
+    margin-bottom: 40px;
+  }
+
+  .popup--review {
+    min-height: 100%;
+  }
+}

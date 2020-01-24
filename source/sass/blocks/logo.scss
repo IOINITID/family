@@ -1,0 +1,28 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__image {
+  width: 44px;
+  height: 60px;
+}
+
+.logo__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-header;
+  margin-left: 14px;
+}
+
+
+@media (max-width: $width-tablet - 1) {
+  .logo__title {
+    margin: 0;
+  }
+
+  .logo__image {
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,43 @@
+.button {
+  color: $text-button;
+  background-color: $button-default;
+  border: none;
+  width: 192px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 18px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $button-default-hover;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: $button-default-active;
+}
+
+.button--close {
+  width: 60px;
+  height: 60px;
+  border: none;
+  padding: 0;
+  background-color: $background-default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button--close:hover,
+.button--close:focus {
+  background-color: $button-close;
+}
+
+.button--close:active {
+  background-color: $button-close-active;
+}

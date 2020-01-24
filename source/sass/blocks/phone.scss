@@ -1,0 +1,23 @@
+.phone {
+  display: flex;
+  align-items: center;
+}
+
+.phone__icon {
+  width: 24px;
+  height: 24px;
+  fill: none;
+}
+
+.phone__number {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-header;
+}
+
+@media (max-width: $width-tablet - 1) {
+  .phone {
+    display: none;
+  }
+}

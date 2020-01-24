@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Отзывы</title>
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
+  <header class="header header--inner">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__logo logo" href="index.html">
+          <svg class="logo__image" width="44" height="60" title="Логотип компании">
+            <use xlink:href="#logo"></use>
+          </svg>
+          <span class="logo__title">ООО “СЕМЬЯ”</span>
+        </a>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="about.html">О компании</a>
+            </li>
+            <li class="navigation__item navigation__item--active">
+              <a class="navigation__link" href="reviews.html">Отзывы</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address">
+          <img class="address__icon" src="img/icon-map.svg" alt="Иконка карты.">
+          <p class="address__text">г. Михайловск на ул. Почтовая 2/2</p>
+        </address>
+        <div class="phone messages__link">
+          <picture>
+            <source media="(max-width: 768px)" srcset="img/icon-phone-mobile.svg">
+            <img class="phone__icon" src="img/icon-phone.svg" width="24" height="24" alt="Иконка телефона">
+          </picture>
+          <a class="phone__number" href="tel:+79682682343">+7 968 268 23 43</a>
+        </div>
+        <div class="toggle">
+          <svg class="toggle__icon" width="21" height="21" title="Иконка телефона">
+            <use xlink:href="#icon-menu"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__wrapper">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Отзывы</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews reviews--inner">
+      <div class="container">
+        <div class="reviews__wrapper">
+          <h2 class="reviews__title">Отзывы</h2>
+          <ul class="reviews__list">
+            <li class="reviews__item review">
+              <div class="review__title">
+                <span class="review__name">Елена</span>
+                <span class="review__city">с. Донское</span>
+              </div>
+              <time class="review__date" datetime="2015-12-28">28.12.2015</time>
+              <p class="review__text">Хорошее агенство. наша семья купила через них дом и не капельки не пожалели. Везде
+                с нами ездил юрист и смотрел за правильностью сделки. Мы довольны.</p>
+              <p class="review__text">С Новым годом Семья! Будте счастливы!</p>
+            </li>
+            <li class="reviews__item review">
+              <div class="review__title">
+                <span class="review__name">Елена</span>
+                <span class="review__city">с. Донское</span>
+              </div>
+              <time class="review__date" datetime="2015-12-28">28.12.2015</time>
+              <p class="review__text">Хорошее агенство. наша семья купила через них дом и не капельки не пожалели. Везде
+                с нами ездил юрист и смотрел за правильностью сделки. Мы довольны.</p>
+              <p class="review__text">С Новым годом Семья! Будте счастливы!</p>
+            </li>
+            <li class="reviews__item review">
+              <div class="review__title">
+                <span class="review__name">Елена</span>
+                <span class="review__city">с. Донское</span>
+              </div>
+              <time class="review__date" datetime="2015-12-28">28.12.2015</time>
+              <p class="review__text">Хорошее агенство. наша семья купила через них дом и не капельки не пожалели. Везде
+                с нами ездил юрист и смотрел за правильностью сделки. Мы довольны.</p>
+              <p class="review__text">С Новым годом Семья! Будте счастливы!</p>
+            </li>
+            <li class="reviews__item review">
+              <div class="review__title">
+                <span class="review__name">Елена</span>
+                <span class="review__city">с. Донское</span>
+              </div>
+              <time class="review__date" datetime="2015-12-28">28.12.2015</time>
+              <p class="review__text">Хорошее агенство. наша семья купила через них дом и не капельки не пожалели. Везде
+                с нами ездил юрист и смотрел за правильностью сделки. Мы довольны.</p>
+              <p class="review__text">С Новым годом Семья! Будте счастливы!</p>
+            </li>
+          </ul>
+          <a class="reviews__link button" href="#">Оставить отзыв</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <p class="footer__copyright">Copyright © 2013-2020 Freepik Company S.L. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="popup popup--recall hide">
+    <h3 class="popup__title">Получить консультацию</h3>
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <input class="form__name form__field" type="text" placeholder="Ваше имя" required>
+      <input class="form__phone form__field" type="text" placeholder="Номер телефона" required>
+      <button class="form__send button" type="submit">Получить консультацию</button>
+      <div class="form__agreement">
+        <label class="form__check" for="check-field-first">
+          <input class="form__check-field visually-hidden" type="checkbox" name="check" id="check-field-first" required>
+          <span class="form__check-icon form__check-icon--checked"></span>
+        </label>
+        <p class="form__text">Я принимаю условия обработки моих <a class="form__agreement-link" href="#"
+            target="_blank">персональных
+            данных</a></p>
+      </div>
+    </form>
+    <button class="popup__close button--close popup__close--recall" type="button" title="Кнопка закрыть модальное окно">
+      <svg width="17" height="17" title="Иконка закрыть">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="popup popup--messages hide">
+    <h3 class="popup__title">Получить консультацию</h3>
+    <ul class="popup__list">
+      <li class="popup__item popup__item--telegram">
+        <a class="popup__link" href="#">Написать в Telegram</a>
+      </li>
+      <li class="popup__item popup__item--whatsapp">
+        <a class="popup__link" href="#">Написать в WhatsApp</a>
+      </li>
+      <li class="popup__item popup__item--recall">
+        <a class="popup__link" href="#">Заказать звонок</a>
+      </li>
+      <li class="popup__item popup__item--call">
+        <a class="popup__link" href="#">Позвонить</a>
+      </li>
+    </ul>
+    <button class="popup__close button--close popup__close--message" type="button"
+      title="Кнопка закрыть модальное окно">
+      <svg width="17" height="17" title="Иконка закрыть">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="popup popup--review hide">
+    <h3 class="popup__title">Оставить свой отзыв</h3>
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form__fieldset">
+        <input class="form__name form__field" type="text" name="name" id="name-field" placeholder="Ваше имя" required>
+        <input class="form__city form__field" type="text" name="city" id="city-field" placeholder="Ваш город" required>
+        <input class="form__mail form__field" type="text" name="mail" id="mail-field" placeholder="E-mail" required>
+      </div>
+      <textarea class="form__review form__field" name="review" id="review-field" placeholder="Текст отзыва"
+        required></textarea>
+      <div class="form__info">
+        <div class="form__agreement">
+          <label class="form__check" for="check-field-second">
+            <input class="form__check-field visually-hidden" type="checkbox" name="check" id="check-field-second"
+              required>
+            <span class="form__check-icon form__check-icon--checked"></span>
+          </label>
+          <p class="form__text">Я принимаю условия обработки моих <a class="form__agreement-link" href="#"
+              target="_blank">персональных
+              данных</a></p>
+        </div>
+        <button class="form__send button" type="submit">Получить консультацию</button>
+      </div>
+    </form>
+    <button class="popup__close button--close popup__close--review" type="button" title="Кнопка закрыть модальное окно">
+      <svg width="17" height="17" title="Иконка закрыть">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="menu hide">
+    <div class="menu__wrapper">
+      <nav class="navigation menu__navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--active">
+            <a class="navigation__link" href="about.html">О компании</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="reviews.html">Отзывы</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu__info">
+        <div class="container">
+          <div class="phone">
+            <svg class="phone__icon" width="24" height="24" title="Иконка телефона">
+              <use xlink:href="#icon-phone-menu"></use>
+            </svg>
+            <a class="phone__number" href="tel:+79682682343">+7 968 268 23 43</a>
+          </div>
+          <address class="address">
+            <img class="address__icon" src="img/icon-map-menu.svg" alt="Иконка карты.">
+            <p class="address__text">г. Михайловск на ул. Почтовая 2/2</p>
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

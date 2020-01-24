@@ -1,0 +1,23 @@
+.form {
+  width: 635px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.form__field {
+  width: 192px;
+  min-height: 44px;
+  background: $background-default;
+  border: 1px solid $border-default;
+  padding: 13px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@media (max-width: $width-tablet - 1) {
+  .form {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
