@@ -13,6 +13,9 @@ Cтраница отзывы: 💻 https://ioinitid.github.io/family/reviews.htm
 ------------
 
 **Превью сайта:**
+
+------------
+
 ![Preview](preview-image.jpg "Preview")
 
 ------------
