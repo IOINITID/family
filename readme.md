@@ -12,6 +12,11 @@ Cтраница отзывы: 💻 https://ioinitid.github.io/family/reviews.htm
 
 ------------
 
+**Превью сайта:**
+![Preview](preview-image.jpg "Preview")
+
+------------
+
 Сделано с ❤️ в [WEB-ELITIT.RU](https://www.web-elitit.ru "Web-elitit.ru")
 > Дизайн сайта: **WEB-ELITIT.RU: ООО "Семья"*
 
